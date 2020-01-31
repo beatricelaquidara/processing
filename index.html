@@ -7,31 +7,29 @@
         <script src="vendors/processing.min.js"></script>
     </head>
     <body>
-        <h1>Processing project by Beatrice Laquidara</h1>
+        <h1>Processing project by Beatrice Laquidara </h1>
         <script type="text/processing">
+        
         void setup(){
 size ( 500, 500);
-background (5, 500, 5);
-smooth();
-noStroke();
+background(255);
 }
 
 void draw (){
-if(frameCount % 10 ==0){
-  fill (frameCount * 2 % 100, frameCount * 3 % 120, frameCount * 4 % 140);
+if(frameCount % 19 ==0){
+  fill (frameCount * 2 % 200, frameCount * 3 % 200, frameCount * 4 % 200);
   pushMatrix();
-  translate (180, 180);
-  rotate(radians(frameCount * 3 % 360));
-  ellipse(8, 4, 100, 18);
-  fill(0);
-  rect(50, 5, 50, 7);
+  translate (225, 225);
+  rotate(radians(frameCount * 5 % 360));
+  ellipse(5, 125, 100, 15);
+  rotate(radians(frameCount * 3% 360));
+  ellipse (8,4,100,18);
   popMatrix();
 }
 
 
 
 }  
-
 </script>
         <canvas></canvas>
     </body>
